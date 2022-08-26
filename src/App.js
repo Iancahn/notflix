@@ -1,21 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import style
 import './styles/app.scss';
 // import components
-import Navbar from './components/Navbar';
-import Cards from './components/Cards';
+import Card from './components/Card';
+// import pages
+import Home from './pages/Home';
 // import data
 import data from './data';
 console.log(data);
 
+
 function App() {
-  const [media, setMedia] = useState(data());
+  const cards = data.map(item => {
+    return (
+      <Card
+        key={item.id}
+        // using a spread instead of passing object below:
+        {...item}
+      // spread replaces this below:
+      // item={item}
+      // line above replaces all of this :
+      // img={item.coverImg}
+      // rating={item.stats.rating}
+      // reviewCount={item.stats.reviewCount}
+      // location={item.location}
+      // title={item.title}
+      // price={item.price}
+      // openSpots={item.openSpots}
+      />
+    )
+  })
+
+
   return (
     <div className="App">
-      <Navbar />
-      <Cards />
+      <Home />
+      {cards}
     </div>
   );
+
 }
 
 export default App;
