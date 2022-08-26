@@ -1,79 +1,105 @@
 import { v4 as uuidv4 } from "uuid";
 // import Images
-import breaking from '../img/breaking-bad.jpg';
-import friends from '../img/friends.jpg';
-import office from '../img/office.jpg';
-import you from '../img/you.jpg';
-import game from '../img/game.jpg';
-import stranger from '../img/stranger-things.jpg';
-import billburr from '../img/billburr.jpg';
-import hustle from '../img/hustle.jpg';
-import ted2 from '../img/ted2.jpg';
-import devil from '../img/devils-advocate.jpg';
-import fury from '../img/fury.jpg';
-import ronny from '../img/ronny-cheng.jpg';
+import breaking from './img/breaking-bad.jpg';
+import friends from './img/friends.jpg';
+import office from './img/office.jpg';
+import you from './img/you.jpg';
+import game from './img/game.jpg';
+import stranger from './img/stranger-things.jpg';
+import billburr from './img/bill-burr.jpg';
+import hustle from './img/hustle.jpg';
+import ted2 from './img/ted2.jpg';
+import devil from './img/devils-advocate.jpg';
+import fury from './img/fury.jpg';
+import ronny from './img/ronny-cheng.jpg';
 
 function Media() {
     return [
         {
             name: 'Breaking Bad',
-            cover: { breaking },
+            img: { breaking },
             progress: 90,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Friends',
-            cover: { friends },
+            img: { friends },
             progress: 50,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'The Office',
-            cover: { office },
+            img: { office },
             progress: 20,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'You',
-            cover: { you },
+            img: { you },
             progress: 97,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'The Game',
-            cover: { game },
+            img: { game },
             progress: 10,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Stranger Things',
-            cover: { stranger },
+            img: { stranger },
             progress: 24,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Bill Burr Show',
-            cover: { billburr },
+            img: { billburr },
             progress: 99,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Hustle',
-            cover: { hustle },
+            img: { hustle },
             progress: 90,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Ted 2',
-            cover: { ted2 },
+            img: { ted2 },
             progress: 50,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Devils Advocate',
-            cover: { devil },
+            img: { devil },
             progress: 96,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Fury',
-            cover: { fury },
+            img: { fury },
             progress: 50,
+            category: "continue-category",
+            id: uuidv4(),
         },
         {
             name: 'Ronny Cheng',
-            cover: { ronny },
+            img: { ronny },
             progress: 20,
+            category: "continue-category",
+            id: uuidv4(),
         },
     ]
 }
+
+export default Media;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import logo
 import Logo from '../img/logo.png';
 // import FontAwesome

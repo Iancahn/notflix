@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-function Card() {
+function Card(props) {
+
     return (
-        <div>
-            <h1>hello</h1>
+        <div className="card">
+            <img src={`../img/${props.img}`} alt="this is on my continue watching list" />
+            <p>{props.name}</p>
         </div>
     )
 }
