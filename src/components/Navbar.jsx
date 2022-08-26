@@ -7,13 +7,13 @@ function Navbar() {
         <header>
             <nav>
                 <div>
-                    <img src={Logo} alt="the new Netflix killer" />
+                    <img src={Logo} alt="the new Netflix killer" id="logo" />
                     <ul className="navbar">
                         <li>Home</li>
                         <li>TV Shows</li>
                         <li>Movies</li>
                     </ul>
-                    <button id="login"></button>
+                    <button id="login">Login Here</button>
                 </div>
             </nav>
         </header>
