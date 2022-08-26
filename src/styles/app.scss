@@ -12,6 +12,12 @@ $white-color: #fcfcfc;
     box-sizing: border-box;
 }
 
+body {
+    background-color: $black-color;
+    font-family: $font-main;
+    font-weight: 400;
+}
+
 // font & headers styling starts here
 
 h1 {}
@@ -20,8 +26,62 @@ h1 {}
 
 // navbar starts here
 
-#id {
-    width: 200px;
+header {
+    background-image: url('../img/netflix-home.jpg');
+    min-height: 45vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    padding-top: 5px;
+    max-width: 10rem;
+}
+
+nav {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+    display: flex;
+    color: $white-color;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+
+.menu {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+li {
+    margin: 0 1rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.member-area {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.icon {
+    font-size: 1.5rem;
 }
 
 // navbar ends here
+
+// content starts here
+
+
+
+// content end here
