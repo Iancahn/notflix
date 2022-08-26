@@ -1,11 +1,30 @@
 import React from 'react';
-
+// import components
+import Card from './Card';
 
 function Cards() {
     return (
-        <div>
-            <h1>hello</h1>
-        </div>
+        <section>
+            <div>
+                <h3>Continue Watching for userName goes here</h3>
+            </div>
+            <div className="card-view">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>
+            <div className="card-view">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>
+        </section>
     )
 }
 
