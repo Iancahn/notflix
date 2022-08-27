@@ -29,7 +29,7 @@ h1 {}
 
 header {
     background-image: url('../img/netflix-home.jpg');
-    min-height: 48vw;
+    min-height: 47vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -164,8 +164,27 @@ section {
     max-width: 30px;
 }
 
-.card {
+.continue-header {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
     color: white;
+}
+
+.card--list {
+    display: flex;
+    margin-left: 4rem;
+}
+
+.card {
+    // margin-top: -80px;
+    color: white;
+    margin-right: 1.2rem;
+    cursor: pointer;
+
+    img {
+        border-radius: 5px;
+    }
 }
 
 // content end here
